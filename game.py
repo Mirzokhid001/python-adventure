@@ -113,3 +113,25 @@ print()
 time.sleep(1)
 
 
+# --end session-- #
+
+print("There is a dragon want to fire you!")
+print("1. Fight him!")
+print("2. Try to run and hide under the mountains")
+print()
+decision = ""
+while(decision == ""):
+    decision = input("Pick a number: ")
+    print()
+    if (decision == "1"):
+        print("You got injured but you cut his one of head")
+        player_health -= 40
+        print("Your health now")
+        print(player_health)
+    elif (decision == "2"):
+        print("You are safe but and need to go fight him when dragon sleep")
+        player_items.append("Warrior")
+        print("Your items now")
+        print(player_items)
+print()
+time.sleep(1)
